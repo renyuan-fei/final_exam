@@ -10,21 +10,58 @@
 <div id="main">
     <div class="box">
         <div class="top">
-            <select id="time" v-model="time">
-                <option value="0">DEFAULT</option>
-                <option value="1">Dimond</option>
-                <option value="2">vertical</option>
-            </select>
+            <input type="date" v-model="time" min="2022-06-01">
 
             <select id="seating_section" v-model="seating_section">
-                <option value="0">DEFAULT</option>
-                <option value="1">Dimond</option>
-                <option value="2">vertical</option>
+                <option value="DEFAULT">DEFAULT</option>
+                <option value="Privilege Seat">Privilege Seat</option>
+                <option value="First class seat">First class seat</option>
+                <option value="Second class seat">Second class seat</option>
+                <option value="Third class seat">Third class seat</option>
             </select>
 
-            <button class="button">check</button>
+            <button class="button" @click="check()">check</button>
         </div>
+
         <div class="body">
+
+            <div class="container">
+                <table class="table-ui">
+                    <thead>
+                    <tr>
+                        <th class="t1">date</th>
+                        <th class="t2">seat_ID</th>
+                        <th class="t3">price</th>
+                        <th class="t4">seating_section</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr v-for="seat in this.seat_list" :key="seat.order_id">
+
+                        <td>
+                            <span style="margin-left: 10px">{{seat.date}}</span>
+                        </td>
+
+                        <td>
+                            <span style="margin-left: 10px">{{ seat.seat_ID }}</span>
+                        </td>
+
+                        <td>
+                            <span style="margin-left: 10px">{{ seat.price }}</span>
+                        </td>
+
+                        <td>
+                            <span style="margin-left: 10px">{{ seat.seating_section }}</span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+                <div v-if="this.seat_list.length === 0" class="NO_DATA">
+                    NO DATA
+                </div>
+
+            </div>
 
         </div>
     </div>

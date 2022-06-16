@@ -17,8 +17,6 @@
 {
     background-color: #7fa998;
 
-    position: fixed;
-
     background-image: url('../images/cross.png');
 
     height: 100%;
@@ -32,7 +30,7 @@
 {
     background-color: #df8543;
     height: 900px;
-    width: 800px;
+    width: 850px;
 
     position: absolute;
     left: 50%;
@@ -40,45 +38,118 @@
 
     transform: translate(-50%, -50%);
 
-    border-radius:25px;
+    border-radius: 25px;
 }
 
 .top
 {
-    background-color: red;
+    /*background-color: red;*/
     height: 150px;
-    width:100%;
+    width: 100%;
 
-    line-height:150px;
+    line-height: 150px;
 
     text-align: center;
 }
 
 .body
 {
-    background-color: blue;
+    /*background-color: blue;*/
     height: 750px;
-    width:100%;
-}
+    width: 100%;
 
-.login_box
-{
+
+    display: flex;
+    flex-direction: column;
     position: absolute;
 
-    background-color: #a5aeff;
+    flex: 1;
+    overflow-y: auto;
+}
 
-    padding: 25px 10px;
+.container {
+    background: #fff;
+    padding: 0 5px 50px;
+}
 
-    border-radius: 10px;
+.table-ui {
+    width: 98.55%;
+    border-collapse: collapse;
+}
 
-    height: 180px;
-    width: 280px;
+.table-ui tr th {
+    height: 30px;
+    padding: 0 12px;
+    font-size: 14px;
+    color: #909399;
+
+    text-align: left;
+    transform: translate(2%, 0);
+
+    border-bottom: 1px solid #ebeef5;
+}
+
+.table-ui tr td {
+    height: 30px;
+    padding: 8px 0;
+    font-size: 14px;
+    color: #606266;
+
+    text-align: left;
+    transform: translate(10%, 0);
+
+    border-bottom: 1px solid #ebeef5;
+}
+
+.table-ui .t1 {
+    width: 25%;
+    height: 40px;
+}
+
+.table-ui .t2 {
+    width: 25%;
+    height: 40px;
+}
+
+.table-ui .t3 {
+    width: 20%;
+    height: 40px;
+}
+
+.table-ui .t4 {
+    width: 17%;
+    height: 40px;
+}
+
+.table-ui tbody tr:hover {
+    background: #f5f5f5;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -o-transition: all .3s linear;
+    -ms-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
+.NO_DATA {
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 60px;
+
+    line-height: 60px;
+    font-size: 12px;
+
+    color: #909399;
+
+    border-bottom: 1px solid #ebeef5;
+
+    text-align: center;
 }
 
 .button
 {
-    position: absolute;
-    left: 28%;
+    /*position: absolute;*/
+    /*left: 28%;*/
     /*transform: translate(-50%,0);*/
 
     display: inline-block;
