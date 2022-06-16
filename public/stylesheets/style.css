@@ -1,78 +1,108 @@
 *
 {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 
-  /*内减模式*/
-  box-sizing: border-box;
+    /*内减模式*/
+    box-sizing: border-box;
 
-  /*列表去前缀*/
-  list-style: none;
+    /*列表去前缀*/
+    list-style: none;
 
-  /*去下划线*/
-  text-decoration: none;
+    /*去下划线*/
+    text-decoration: none;
 }
 
-input,textarea{
-  vertical-align: top;
-  margin-bottom: 10px;
+#main
+{
+    background-color: #7fa998;
 
-  -webkit-appearance:none;
-  -moz-appearance: none;
+    position: fixed;
 
-  font-size:20px;
-  height:30px;
-  border-radius:4px;
-  border:1px solid #c8cccf;
-  color:#6a6f77;
+    background-image: url('../images/cross.png');
 
-  outline:0;
+    height: 100%;
+    min-height: 1287px;
+
+    width: 100%;
+    min-width: 1400px;
 }
 
-label {
-  display: inline-block;
-  /*width: 100px;*/
-  text-align: right;
+.box
+{
+    background-color: #df8543;
+    height: 900px;
+    width: 800px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    border-radius:25px;
+}
+
+.top
+{
+    background-color: red;
+    height: 150px;
+    width:100%;
+
+    line-height:150px;
+
+    text-align: center;
+}
+
+.body
+{
+    background-color: blue;
+    height: 750px;
+    width:100%;
 }
 
 .login_box
 {
-  position: absolute;
+    position: absolute;
 
-  background-color: #a5aeff;
+    background-color: #a5aeff;
 
-  padding: 25px 10px;
+    padding: 25px 10px;
 
-  border-radius: 10px;
+    border-radius: 10px;
 
-  height: 180px;
-  width: 280px;
+    height: 180px;
+    width: 280px;
 }
 
 .button
 {
-  position: absolute;
-  left: 28%;
-  /*transform: translate(-50%,0);*/
+    position: absolute;
+    left: 28%;
+    /*transform: translate(-50%,0);*/
 
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #feffe0;
-  border: none;
-  color: black;
-  text-align: center;
-  font-size: 12px;
-  padding: 10px;
-  width: 100px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #feffe0;
+    border: none;
+    color: black;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
 }
 
-.button:hover {background-color: #c8e4fe}
+.button:hover
+{
+    background-color: #c8e4fe
+}
 
-.button:active {
-  background-color: #6b76ff;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.button:active
+{
+    background-color: #6b76ff;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
 }

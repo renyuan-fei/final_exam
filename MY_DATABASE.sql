@@ -68,28 +68,27 @@ insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL -
 insert into seat (price,seating_section) value (100,'Third class seat');
 insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL -1 DAY),last_insert_id());
 
-
 insert into seat (price,seating_section) value (300,'Privilege Seat');
-insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL 1 DAY),last_insert_id());
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL -1 DAY),last_insert_id());
 insert into seat (price,seating_section) value (100,'First class seat');
-insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL 1 DAY),last_insert_id());
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL -1 DAY),last_insert_id());
 insert into seat (price,seating_section) value (100,'Second class seat');
-insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL 1 DAY),last_insert_id());
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL -1 DAY),last_insert_id());
 insert into seat (price,seating_section) value (100,'Third class seat');
-insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL 1 DAY),last_insert_id());
-
-
-insert into seat (price,seating_section) value (300,'Privilege Seat');
-insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL 0 DAY),last_insert_id());
-insert into seat (price,seating_section) value (100,'First class seat');
-insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL 0 DAY),last_insert_id());
-insert into seat (price,seating_section) value (100,'Second class seat');
-insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL 0 DAY),last_insert_id());
-insert into seat (price,seating_section) value (100,'Third class seat');
-insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL 0 DAY),last_insert_id());
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL -1 DAY),last_insert_id());
 
 
 insert into seat (price,seating_section) value (300,'Privilege Seat');
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL 0 DAY),last_insert_id());
+insert into seat (price,seating_section) value (100,'First class seat');
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL 0 DAY),last_insert_id());
+insert into seat (price,seating_section) value (100,'Second class seat');
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL 0 DAY),last_insert_id());
+insert into seat (price,seating_section) value (100,'Third class seat');
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL 0 DAY),last_insert_id());
+
+
+insert into seat (price,seating_section) value (300,'Privilege Seat');
 insert into seat_information (date,seat_ID) value ('2022-06-20',last_insert_id());
 insert into seat (price,seating_section) value (100,'First class seat');
 insert into seat_information (date,seat_ID) value ('2022-06-20',last_insert_id());
@@ -99,6 +98,14 @@ insert into seat (price,seating_section) value (100,'Third class seat');
 insert into seat_information (date,seat_ID) value ('2022-06-20',last_insert_id());
 
 
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL -2 DAY),1);
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL -2 DAY),2);
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL -2 DAY),3);
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL -3 DAY),4);
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL -3 DAY),5);
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL -3 DAY),6);
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL -3 DAY),7);
+insert into seat_information (date,seat_ID) value (DATE_SUB(curdate(),INTERVAL -3 DAY),8);
 
 
 # reservation system
