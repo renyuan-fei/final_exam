@@ -28,7 +28,7 @@
 
 .box
 {
-    background-color: #df8543;
+    background-color: #FFFFFF;
     height: 900px;
     width: 850px;
 
@@ -50,12 +50,14 @@
     line-height: 150px;
 
     text-align: center;
+
+    border-bottom: 1px solid #000000;
 }
 
 .body
 {
     /*background-color: blue;*/
-    height: 750px;
+    height: 700px;
     width: 100%;
 
 
@@ -154,7 +156,7 @@
 
     display: inline-block;
     border-radius: 4px;
-    background-color: #feffe0;
+    background-color: #a3816a;
     border: none;
     color: black;
     text-align: center;

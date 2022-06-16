@@ -24,7 +24,7 @@ create table if not exists seat
 (
     seat_ID int unsigned NOT NULL auto_increment primary key,
     price int NOT NULL,
-    seating_section varbinary(255) NOT NULL
+    seating_section varchar(255) NOT NULL
 
 #     FOREIGN KEY (seating_section_ID) REFERENCES seating_section (seating_section_ID)
 );
