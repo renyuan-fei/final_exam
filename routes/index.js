@@ -23,8 +23,10 @@ router.post('/get_seat', function(req, res)
 
       let query_line = "select seat_detail.date,\n" +
           "       seat.seat_ID,\n" +
+          "       seat_detail.order_ID,\n" +
           "       seat.price,\n" +
-          "       seat.seating_section\n" +
+          "       seat.seating_section,\n" +
+          "       seat_detail.drama_title\n" +
           "from seat_detail,\n" +
           "     seat\n" +
           "where seat_detail.seat_ID = seat.seat_ID\n" +
@@ -37,8 +39,10 @@ router.post('/get_seat', function(req, res)
       {
         query_line = "select seat_detail.date,\n" +
             "       seat.seat_ID,\n" +
+            "       seat_detail.order_ID,\n" +
             "       seat.price,\n" +
-            "       seat.seating_section\n" +
+            "       seat.seating_section,\n" +
+            "       seat_detail.drama_title\n" +
             "from seat_detail,\n" +
             "     seat\n" +
             "where seat_detail.seat_ID = seat.seat_ID\n" +
@@ -51,8 +55,10 @@ router.post('/get_seat', function(req, res)
       {
         query_line = "select seat_detail.date,\n" +
             "       seat.seat_ID,\n" +
+            "       seat_detail.order_ID,\n" +
             "       seat.price,\n" +
-            "       seat.seating_section\n" +
+            "       seat.seating_section,\n" +
+            "       seat_detail.drama_title\n" +
             "from seat_detail,\n" +
             "     seat\n" +
             "where seat_detail.seat_ID = seat.seat_ID\n" +
@@ -65,8 +71,10 @@ router.post('/get_seat', function(req, res)
       {
         query_line = "select seat_detail.date,\n" +
             "       seat.seat_ID,\n" +
+            "       seat_detail.order_ID,\n" +
             "       seat.price,\n" +
-            "       seat.seating_section\n" +
+            "       seat.seating_section,\n" +
+            "       seat_detail.drama_title\n" +
             "from seat_detail,\n" +
             "     seat\n" +
             "where seat_detail.seat_ID = seat.seat_ID\n" +
@@ -79,6 +87,8 @@ router.post('/get_seat', function(req, res)
 
       connection.query(query_line,params,function (err,result)
       {
+        connection.release();
+
         console.log(result)
         if (err)
         {

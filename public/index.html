@@ -30,9 +30,10 @@
                     <thead>
                     <tr>
                         <th class="t1">date</th>
-                        <th class="t2">seat_ID</th>
-                        <th class="t3">price</th>
-                        <th class="t4">seating_section</th>
+                        <th class="t2">title</th>
+                        <th class="t3">seat_ID</th>
+                        <th class="t4">price</th>
+                        <th class="t5">seating_section</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -40,6 +41,10 @@
 
                         <td>
                             <span style="margin-left: 10px">{{seat.date}}</span>
+                        </td>
+
+                        <td>
+                            <span style="margin-left: 10px">{{seat.drama_title}}</span>
                         </td>
 
                         <td>
@@ -67,8 +72,6 @@
     </div>
 </div>
 
-</body>
-
 <!--suppress SpellCheckingInspection -->
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 <!--suppress SpellCheckingInspection -->
@@ -78,4 +81,5 @@
 <!--suppress SpellCheckingInspection -->
 <script src="./javascripts/MY_COOKIE.js"></script>
 
+</body>
 </html>

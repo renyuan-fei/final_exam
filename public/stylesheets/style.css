@@ -81,7 +81,7 @@
 
 .table-ui tr th {
     height: 30px;
-    padding: 0 12px;
+    padding: 0 20px;
     font-size: 14px;
     color: #909399;
 
@@ -104,7 +104,7 @@
 }
 
 .table-ui .t1 {
-    width: 25%;
+    width: 28%;
     height: 40px;
 }
 
@@ -119,6 +119,11 @@
 }
 
 .table-ui .t4 {
+    width: 17%;
+    height: 40px;
+}
+
+.table-ui .t5 {
     width: 17%;
     height: 40px;
 }
